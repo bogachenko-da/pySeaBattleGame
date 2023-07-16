@@ -85,12 +85,12 @@ class Game:
             if repeat:
                 num -= 1
 
-            if self.ai.board.count == 7:
+            if self.ai.board.count_destroyed == 7:
                 print("-" * 20)
                 print("Пользователь выиграл!")
                 break
 
-            if self.user.board.count == 7:
+            if self.user.board.count_destroyed == 7:
                 print("-" * 20)
                 print("Компьютер выиграл!")
                 break
